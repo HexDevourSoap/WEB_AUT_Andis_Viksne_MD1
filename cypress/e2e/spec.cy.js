@@ -1,6 +1,18 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
-    
+import { HomePage } from "./pageObjects/HomePage";
+
+describe('demoqa scenarios', () => {
+  beforeEach(() => {
+    cy.visit('https://demoqa.com/selectable')
+
   })
+
+  it("Grid", () => {
+    // Click Grid button
+    HomePage.gridButton.click();
+    
+    
+  });
+
+
+
 })
