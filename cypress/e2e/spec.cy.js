@@ -22,6 +22,12 @@ describe('demoqa scenarios', () => {
     HomePage.fourButton.click();
     HomePage.sixButton.click();
     HomePage.eightButton.click();
+
+    // Validate - “Two”, “Four”, “Six”, “Eight” are highlighted
+    
+    HomePage.twohighlightedButton.should("have.class", "active");
+
+
   });
 
  

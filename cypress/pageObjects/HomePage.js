@@ -22,6 +22,22 @@ export class HomePage extends BasePage {
     }
     static get eightButton() {
       return cy.get("#row3 > li:nth-child(2)").click();
-  }
+    }
+
+    static get twohighlightedButton() {
+      return cy.get("#row1 > li.list-group-item.active.list-group-item-action");
+    }
+
+    static get fourhighlightedButton() {
+      return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
+    }
+
+    static get sixhighlightedButton() {
+      return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
+    }
+
+    static get eighthighlightedButton() {
+      return cy.get("#row3 > li.list-group-item.active.list-group-item-action");
+    }
     
 }
