@@ -24,20 +24,39 @@ export class HomePage extends BasePage {
       return cy.get("#row3 > li:nth-child(2)").click();
     }
 
-    static get twohighlightedButton() {
-      return cy.get("#row1 > li.list-group-item.active.list-group-item-action");
+
+     static get oneButton() {    
+      return cy.get("#row1 > li:nth-child(1)");
+    }
+    
+    static get threeButton() {
+      return cy.get("#row1 > li:nth-child(3)");
     }
 
-    static get fourhighlightedButton() {
-      return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
+    static get fiveButton() {
+      return cy.get("#row2 > li:nth-child(2)");
+    }
+    static get sevenButton() {
+      return cy.get("#row3 > li:nth-child(1)");
+    }
+    static get nineButton() {
+      return cy.get("#row3 > li:nth-child(3)");
     }
 
-    static get sixhighlightedButton() {
-      return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
-    }
+    // static get twohighlightedButton() {
+    //   return cy.get("#row1 > li.list-group-item.active.list-group-item-action");
+    // }
 
-    static get eighthighlightedButton() {
-      return cy.get("#row3 > li.list-group-item.active.list-group-item-action");
-    }
+    // static get fourhighlightedButton() {
+    //   return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
+    // }
+
+    // static get sixhighlightedButton() {
+    //   return cy.get("#row2 > li.list-group-item.active.list-group-item-action");
+    // }
+
+    // static get eighthighlightedButton() {
+    //   return cy.get("#row3 > li.list-group-item.active.list-group-item-action");
+    // }
     
 }

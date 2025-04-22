@@ -25,8 +25,17 @@ describe('demoqa scenarios', () => {
 
     // Validate - “Two”, “Four”, “Six”, “Eight” are highlighted
     
-    HomePage.twohighlightedButton.should("have.class", "active");
+    HomePage.twoButton.should("have.class", "active");
+    HomePage.fourButton.should("have.class", "active");
+    HomePage.sixButton.should("have.class", "active");
+    HomePage.eightButton.should("have.class", "active");
 
+    // Validate that “One”, “Three”, “Five”, “Seven”, “Nine” are not highlighted
+    HomePage.oneButton.should("not.have.class", "active");
+    HomePage.threeButton.should("not.have.class", "active");
+    HomePage.fiveButton.should("not.have.class", "active");
+    HomePage.sevenButton.should("not.have.class", "active");
+    HomePage.nineButton.should("not.have.class", "active");
 
   });
 
